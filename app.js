@@ -9,13 +9,13 @@ function adicionarAmigo(amigo) { //função pra adicionar amigos digitados
     } else { //se não, pede pra inserir um valor válido
         alert('Por favor, insira um nome.');
     }
-    //limparCampo ();
+    limparCampo ();
     //chamada da função que limpa a caixa de texto
   
     alert(amigos); //teste pra ver se tá juntando no array
 }
 
-/*function limparCampo () {
+function limparCampo () {
     amigo = document.querySelector ('input');
     amigo.value = '';
     //limpar caixa de texto
