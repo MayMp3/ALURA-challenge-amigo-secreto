@@ -25,6 +25,15 @@ function atualizarAmigos () {
     lista.innerHTML = conteudo;
 }
 
+function sortearAmigo() {
+    if (amigos != '') {
+        let sorteio = Math.floor(Math.random() * amigos.length);
+        let ganhador = amigos[sorteio];
+        resultado.innerHTML = `O amigo sorteado é ${ganhador}!`;
+    } else {
+        alert('Não há amigos para sortear.');
+    }
+}
 
 function limparCampo () {
     amigo = document.querySelector ('input');
